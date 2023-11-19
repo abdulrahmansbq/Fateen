@@ -13,12 +13,16 @@ class Session extends Model
 
     protected $guarded = ['id'];
 
+    protected $primaryKey = 'id';
+
+    public $incrementing = false;
+
     /**
-     * Get the chat of a specific Session
+     * Get the chats of a specific Session
      */
-    public function chat(): HasOne
+    public function chats(): HasMany
     {
-        return $this->hasOne(Chat::class);
+        return $this->hasMany(Chat::class);
     }
 
     /**
