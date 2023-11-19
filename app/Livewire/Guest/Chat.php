@@ -66,7 +66,6 @@ class Chat extends Component
         $siwarDetails = $embeddingService->getSiwarDetails($wordIdInSiwar, $message);
 
         $answer = $embeddingService->getGptAnswer($siwarDetails, $message);
-
         $message = $chat->messages()->create([
             'content' => $answer,
             'is_bot' => true,
