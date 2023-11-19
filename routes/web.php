@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', \App\Livewire\Guest\Home::class)->name('home');
+
+Route::get('/chat', \App\Livewire\Guest\Chat::class)->name('chat.show');
