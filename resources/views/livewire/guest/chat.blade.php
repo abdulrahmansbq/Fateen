@@ -12,11 +12,8 @@
             <h3 id="targetDiv">قم بكتابة استفسارك</h3>
         </div>
         <div class="header-option">
-            <a class="del-btn" data-cursor="pointer" href="chat.html"><i class="iconsax"
+            <a class="del-btn" data-cursor="pointer" wire:click="destroySession()"><i class="iconsax"
                                                                          data-icon="trash"></i></a>
-            <a class="premium-btn" id="subscriptionBtn" data-cursor="pointer" href="chat.html#!"><i
-                    class="iconsax" data-icon="crown-2"></i> Get
-                <span>premium</span></a>
         </div>
     </div>
     <div class="main-chat">
@@ -61,7 +58,7 @@
             </button>
             <input type="text" class="msger-input" placeholder="قم بكتابة الإستفسار هنا..." wire:keydown.enter="sendMessage()"
                    wire:model="question" wire:loading.attr="disabled" />
-            <button type="submit" class="msger-send-btn" id="sendBtn" wire:click="sendMessage()"><i class="iconsax" data-icon="send-1" wire:ignore ></i></button>
+            <button type="submit" class="msger-send-btn" wire:loading.attr="disabled" id="sendBtn" wire:click="sendMessage()"><i class="iconsax" data-icon="send-1" wire:ignore ></i></button>
         </div>
     </div>
 </div>

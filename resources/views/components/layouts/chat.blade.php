@@ -110,22 +110,6 @@
         </div>
         <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history" tabindex="0">
             <div class="main-wrapper p-0">
-                <div class="fixed-header">
-                    <div class="d-flex align-items-center gap-2">
-                        <button class="navbar-toggler d-md-none d-block" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#mainnavbarNav" aria-controls="mainnavbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <i class="iconsax" data-icon="text-align-justify"></i>
-                        </button>
-                        <a href="index.html" class="logo-icon d-flex d-md-none">
-                            <img src="{{ asset('assets/svg/logo-icon.svg') }}" class="img-fluid">
-                        </a>
-                        <h3>History</h3>
-                    </div>
-                    <a class="premium-btn" data-cursor="pointer" href="chat.html"><i class="iconsax" data-icon="crown-2"></i>
-                        Get
-                        <span>premium</span></a>
-                </div>
                 <div class="main-section">
                     <div class="container card p-0">
                         <div class="card-header">
@@ -270,22 +254,6 @@
         </div>
         <div class="tab-pane fade" id="subscription" role="tabpanel" aria-labelledby="subscription" tabindex="0">
             <div class="main-wrapper p-0">
-                <div class="fixed-header">
-                    <div class="d-flex align-items-center gap-2">
-                        <button class="navbar-toggler d-md-none d-block" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#mainnavbarNav" aria-controls="mainnavbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <i class="iconsax" data-icon="text-align-justify"></i>
-                        </button>
-                        <a href="index.html" class="logo-icon d-flex d-md-none">
-                            <img src="{{ asset('assets/svg/logo-icon.svg') }}" class="img-fluid">
-                        </a>
-                        <h3>Subscription</h3>
-                    </div>
-                    <a class="premium-btn" data-cursor="pointer" href="chat.html"><i class="iconsax" data-icon="crown-2"></i>
-                        Get
-                        <span>premium</span></a>
-                </div>
                 <div class="main-section">
                     <div class="container card p-0">
                         <div class="card-header">
@@ -382,22 +350,6 @@
         </div>
         <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help" tabindex="0">
             <div class="main-wrapper p-0">
-                <div class="fixed-header">
-                    <div class="d-flex align-items-center gap-2">
-                        <button class="navbar-toggler d-md-none d-block" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#mainnavbarNav" aria-controls="mainnavbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <i class="iconsax" data-icon="text-align-justify"></i>
-                        </button>
-                        <a href="index.html" class="logo-icon d-flex d-md-none">
-                            <img src="{{ asset('assets/svg/logo-icon.svg') }}" class="img-fluid">
-                        </a>
-                        <h3>FAQ</h3>
-                    </div>
-                    <a class="premium-btn" data-cursor="pointer" href="chat.html"><i class="iconsax" data-icon="crown-2"></i>
-                        Get
-                        <span>premium</span></a>
-                </div>
                 <div class="faq-section main-section">
                     <div class="container card p-0">
                         <div class="card-header">
@@ -582,22 +534,6 @@
         </div>
         <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings" tabindex="0">
             <div class="main-wrapper p-0">
-                <div class="fixed-header">
-                    <div class="d-flex align-items-center gap-2">
-                        <button class="navbar-toggler d-md-none d-block" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#mainnavbarNav" aria-controls="mainnavbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <i class="iconsax" data-icon="text-align-justify"></i>
-                        </button>
-                        <a href="index.html" class="logo-icon d-flex d-md-none">
-                            <img src="{{ asset('assets/svg/logo-icon.svg') }}" class="img-fluid">
-                        </a>
-                        <h3>Settings</h3>
-                    </div>
-                    <a class="premium-btn" data-cursor="pointer" href="chat.html"><i class="iconsax" data-icon="crown-2"></i>
-                        Get
-                        <span>premium</span></a>
-                </div>
                 <div class="main-section d-flex gap-4 flex-column">
                     <div class="container card p-0">
                         <div class="card-header">
