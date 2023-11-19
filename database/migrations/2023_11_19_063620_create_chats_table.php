@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('chats', function (Blueprint $table) {
-            $table->uuid();
+            $table->uuid()->primary();
             $table->string('session_id');
             $table->foreign('session_id')
                 ->references('id')

@@ -22,8 +22,9 @@ return new class extends Migration
                 ->references('id')
                 ->on('sessions')
                 ->onDelete('cascade');
-            $table->text('message');
+            $table->text('content');
             $table->boolean('is_bot')->default(false);
+            $table->unsignedTinyInteger('embedding_status')->default(1);
             $table->timestamps();
         });
     }
