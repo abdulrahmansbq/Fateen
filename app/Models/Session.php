@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Session extends Model
 {
@@ -13,10 +14,18 @@ class Session extends Model
     protected $guarded = ['id'];
 
     /**
-     * Get all of the chats for a specific Session
+     * Get the chat of a specific Session
      */
-    public function chats(): HasMany
+    public function chat(): HasOne
     {
-        return $this->hasMany(Chat::class);
+        return $this->hasOne(Chat::class);
+    }
+
+    /**
+     * Get the messages of a specific Session
+     */
+    public function chatMessages(): HasMany
+    {
+        return $this->hasMany(ChatMessage::class);
     }
 }
