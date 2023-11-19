@@ -547,7 +547,7 @@ li {
   border-bottom-left-radius: 0;
   background: rgba(var(--content-color), 0.25);
   border-radius: 6px;
-  color: rgba(var(--title-color), 0.6);
+  color: rgba(var(--dark-title), 1);
   margin-right: 0;
 }
 [dir=rtl] .left-msg .msg-bubble {
