@@ -7,7 +7,7 @@ return [
     | Third Party Services
     |--------------------------------------------------------------------------
     |
-    | This file is for storing the credentials for third party services such
+    | This file is for storing the credentials for third party Services such
     | as Mailgun, Postmark, AWS and more. This file provides the de facto
     | location for this type of information, allowing packages to have
     | a conventional file to locate the various service credentials.
@@ -30,5 +30,16 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+
+    'pinecone' => [
+        'api_key' => env('PINECONE_API_KEY'),
+        'environment' => env('PINECONE_ENVIRONMENT'),
+        'index' => env('PINECONE_INDEX'),
+    ],
+
+    'siwar' => [
+        'api_key' => env('SIWAR_API_KEY'),
+        'bulk_entries_endpoint' => env('SIWAR_BULK_ENTRIES_ENDPOINT'),
+    ]
 
 ];
