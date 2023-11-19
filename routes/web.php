@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', \App\Livewire\Guest\Home::class)->name('home');
 
-Route::get('/chat/{chatUuid?}', \App\Livewire\Guest\Chat::class)->name('chat.show');
+Route::get('/chat/{chatUuid?}', \App\Livewire\Guest\Chat::class)
+    ->middleware('chat.authorized')
+    ->name('chat.show');
