@@ -14,6 +14,10 @@ class Chat extends Model
 
     protected $guarded = ['uuid'];
 
+    protected $primaryKey = 'uuid';
+
+    public $incrementing = false;
+
     /**
      * Get all the messages of a specific Chat
      */
