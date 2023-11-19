@@ -54,7 +54,7 @@ class Chat extends Component
 
 
         if (!$this->chatUuid) {
-            $this->redirect(route('chat.show', $chat->uuid), navigate: true);
+            $this->redirect(route('chat.show', $chat->uuid), navigate: false);
         }
 
         $embeddingService = (new EmbeddingService);
@@ -71,6 +71,11 @@ class Chat extends Component
             'content' => $answer,
             'is_bot' => true,
         ]);
+    }
+
+    public function destroySession(){
+        session()->flush();
+        $this->redirect(route('chat.show'));
     }
 
 
