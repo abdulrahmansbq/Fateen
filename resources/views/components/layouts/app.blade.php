@@ -10,7 +10,7 @@
     <meta name="author" content="megabot">
     <link rel="icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon" />
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon" />
-    <title>Megabot</title>
+    <title>فطين</title>
 
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,21 +73,10 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('chat.show') }}" wire:navigate>Chat</a>
+                                <a class="nav-link" href="{{ route('chat.show') }}">تحدث مع فطين</a>
                             </li>
 
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="service.html">service</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">pricing</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact-us.html">contact</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -100,97 +89,6 @@
 
 {{ $slot }}
 
-<!-- footer section start-->
-<footer>
-    <div class="container">
-        <div class="footer-row">
-            <div class="footer-main">
-                <a href="index.html#" class="footer-logo"><img src="{{ asset('assets/images/logo.svg') }}" class="img-fluid" alt=""></a>
-                <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
-                <form>
-                    <div class="input-group">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                               placeholder="Enter your mail">
-                        <a href="index.html" data-cursor="pointer" class="btn-basic">Subscribe</a>
-                    </div>
-                </form>
-                <ul class="social-links">
-                    <li><a data-cursor="pointer" href="https://www.facebook.com/"><img
-                                src="{{ asset('assets/svg/social/fb.svg') }}" class="img-fluid" alt="facebook"></a></li>
-                    <li><a data-cursor="pointer" href="https://in.linkedin.com/"><img
-                                src="{{ asset('assets/svg/social/linkedin.svg') }}" class="img-fluid" alt="linkedin"></a></li>
-                    <li><a data-cursor="pointer" href="https://www.instagram.com/"><img
-                                src="{{ asset('assets/svg/social/insta.svg') }}" class="img-fluid" alt="insta"></a></li>
-                    <li><a data-cursor="pointer" href="https://twitter.com/login"><img
-                                src="{{ asset('assets/svg/social/twitter.svg') }}" class="img-fluid" alt="twitter"></a></li>
-                </ul>
-            </div>
-            <div class="link-section">
-                <div class="footer-title">
-                    <img src="{{ asset('assets/svg/star.svg') }}" class="img-fluid" alt="star">
-                    Quick Link
-                </div>
-                <div class="footer-content">
-                    <ul>
-                        <li><a data-cursor="pointer" href="index.html">Home</a></li>
-                        <li><a data-cursor="pointer" href="service.html">Service</a></li>
-                        <li><a data-cursor="pointer" href="pricing.html">Pricing</a></li>
-                        <li><a data-cursor="pointer" href="contact-us.html">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="link-section">
-                <div class="footer-title">
-                    <img src="{{ asset('assets/svg/star.svg') }}" class="img-fluid" alt="star">
-                    Our service
-                </div>
-                <div class="footer-content">
-                    <ul>
-                        <li><a data-cursor="pointer" href="chat.html">Generate</a></li>
-                        <li><a data-cursor="pointer" href="chat.html">Find Image</a></li>
-                        <li><a data-cursor="pointer" href="chat.html">Email writer</a></li>
-                        <li><a data-cursor="pointer" href="chat.html">Social media</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="link-section">
-                <div class="footer-title">
-                    <img src="{{ asset('assets/svg/star.svg') }}" class="img-fluid" alt="star">
-                    Our company
-                </div>
-                <div class="footer-content">
-                    <ul>
-                        <li><a data-cursor="pointer" href="login.html">Login</a></li>
-                        <li><a data-cursor="pointer" href="blog-listing.html">Blog listing</a></li>
-                        <li><a data-cursor="pointer" href="blog-grid.html">Blog Grid</a></li>
-                        <li><a data-cursor="pointer" href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <h4>@2023 All the Copyright Reserved.</h4>
-            <ul class="footer-links">
-                <li><a href="terms.html">Privacy Policy </a></li>
-                <li><a href="terms.html">Terms & Condition </a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-<!-- footer section end-->
-
-
-<!-- Tap To Top Button Start -->
-<div class="tap-to-top-box hide">
-    <button class="tap-to-top-button"><i class="iconsax" data-icon="chevron-up"></i></button>
-</div>
-<!-- Tap To Top Button End -->
-
-
-<!--custom cursor start  -->
-<div id="cursor"></div>
-<div id="cursor-border"></div>
-<!--custom cursor start  -->
 
 
 <!-- Bootstrap js-->

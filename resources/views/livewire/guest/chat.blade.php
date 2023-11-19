@@ -6,10 +6,7 @@
                     aria-label="Toggle navigation">
                 <i class="iconsax" data-icon="text-align-justify"></i>
             </button>
-            <a href="index.html" class="logo-icon d-flex d-md-none">
-                <img src="{{ asset('assets/svg/logo-icon.svg') }}" class="img-fluid">
-            </a>
-            <h3 id="targetDiv">قم بكتابة استفسارك</h3>
+            <h3 id="targetDiv">تحدث مع فطين</h3>
         </div>
         <div class="header-option">
             <a class="del-btn" data-cursor="pointer" wire:click="destroySession()"><i class="iconsax"
@@ -51,11 +48,6 @@
         </div>
 
         <div class="msger-inputarea">
-            <button class="navbar-toggler d-lg-none d-block msger-send-btn" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <i class="iconsax" data-icon="text-align-justify"></i>
-            </button>
             <input type="text" class="msger-input" placeholder="قم بكتابة الإستفسار هنا..." wire:keydown.enter="sendMessage()"
                    wire:model="question" wire:loading.attr="disabled" />
             <button type="submit" class="msger-send-btn" wire:loading.attr="disabled" id="sendBtn" wire:click="sendMessage()"><i class="iconsax" data-icon="send-1" wire:ignore ></i></button>
