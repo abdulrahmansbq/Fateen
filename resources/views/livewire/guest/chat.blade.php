@@ -27,6 +27,15 @@
             </div>
         </div>
         <div class="msger-chat">
+            @foreach($chat?->messages ?? [] as $message)
+                <div @class(['msg', 'right-msg' => $message->is_bot, 'left-msg' => !$message->is_bot]) >
+                    <div class="msg-bubble">
+                        <div class="msg-text">
+                            {{ $message->content }}
+                        </div>
+                    </div>
+                </div>
+            @endforeach
             <div class="msg right-msg" >
                 <div class="msg-bubble" wire:loading style="display: none;">
                     <div class="msg-text">
@@ -51,7 +60,7 @@
                 <i class="iconsax" data-icon="text-align-justify"></i>
             </button>
             <input type="text" class="msger-input" placeholder="قم بكتابة الإستفسار هنا..." wire:keydown.enter="sendMessage()"
-                   wire:model="question" />
+                   wire:model="question" wire:loading.attr="disabled" />
             <button type="submit" class="msger-send-btn" id="sendBtn" wire:click="sendMessage()"><i class="iconsax" data-icon="send-1" wire:ignore ></i></button>
         </div>
     </div>
