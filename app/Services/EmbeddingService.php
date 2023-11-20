@@ -28,8 +28,7 @@ class EmbeddingService
         )->body();
 
         $this->updateMessageStatus($message, MessageEmbeddingStatus::EXPLAINED);
-
-        return json_decode($results)->matches[0]->id;
+        return json_decode($results)->matches[0]->metadata->DocumentID;
     }
 
     public function getSiwarDetails($id, $message){
